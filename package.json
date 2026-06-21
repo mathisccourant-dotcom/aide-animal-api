@@ -1,0 +1,11 @@
+{
+  "name": "aide-animal-api",
+  "version": "1.0.0",
+  "description": "API officielle d'Aide Animal",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "license": "MIT"
+}
