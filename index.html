@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SmartMail AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="font-family:sans-serif;text-align:center;padding:20px;">
+
+  <h1>SmartMail AI</h1>
+  <p>Écris n'importe comment. Obtiens un email parfait.</p>
+
+  <textarea id="input" placeholder="Ex: ce client me saoule refuse sa demande..."
+  style="width:100%;height:120px;"></textarea>
+
+  <br><br>
+
+  <button onclick="generate()">Générer</button>
+
+  <pre id="output" style="text-align:left;background:#eee;padding:10px;"></pre>
+
+<script>
+function generate() {
+  let text = document.getElementById("input").value;
+
+  let result = "Objet : Réponse à votre demande\n\n";
+  result += "Bonjour,\n\n";
+  result += "Merci pour votre demande. Après étude, nous ne sommes malheureusement pas en mesure d’y donner suite.\n\n";
+  result += "Nous vous remercions pour votre compréhension.\n\n";
+  result += "Cordialement";
+
+  document.getElementById("output").innerText = result;
+}
+</script>
+
+</body>
+</html>
